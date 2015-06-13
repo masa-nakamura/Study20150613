@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <title>index.html</title>
 <script type="text/javascript">
+var str ;
 for(var x=1; x<=30; x++) {
+str = String(x) ;
 if(x % 3 == 0 && x % 5 ==0){
 document.write("fizzbuzz");
 }
@@ -14,6 +16,18 @@ document.write("fizz");
 else if (x % 5 == 0) {
 document.write("buzz");
 }
+else if (str.match(7)) {
+document.write("github");
+}
+else if (x % 3 == 0 && str.match(7)) {
+document.write("githubfizz");
+}
+else if (x % 5 == 0 && str.match(7)) {
+document.write("githubbuzz");
+}
+else if (x % 3 == 0 && x % 5 == 0 && str.match(7)) {
+document.write("githubfizzbuzz");
+}
 else{
 document.write(x);
 }
@@ -22,6 +36,5 @@ document.write("<br>");
 </script>
 </head>
 <body>
-Hello world. 
 </body>
 </html>
